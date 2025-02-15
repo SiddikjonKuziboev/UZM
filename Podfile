@@ -9,6 +9,8 @@ target 'UZM' do
  pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'SDWebImage'
-  pod 'lottie-ios'
+
+
+
 
 end
