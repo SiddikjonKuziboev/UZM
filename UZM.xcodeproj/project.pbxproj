@@ -13,9 +13,14 @@
 		4D301E8A2D60765C002ED69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D301E892D60765C002ED69A /* Assets.xcassets */; };
 		4D301E8D2D60765C002ED69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D301E8B2D60765C002ED69A /* LaunchScreen.storyboard */; };
 		4D301E972D607898002ED69A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D301E962D607898002ED69A /* BaseViewController.swift */; };
+		4D301E9B2D607AFB002ED69A /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D301E992D607AFB002ED69A /* HomeTableViewCell.swift */; };
+		4D301E9C2D607AFB002ED69A /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D301E9A2D607AFB002ED69A /* HomeTableViewCell.xib */; };
+		4D301E9F2D607EF1002ED69A /* Ext+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D301E9E2D607EF1002ED69A /* Ext+Color.swift */; };
+		784AF83C10A018566C00D700 /* Pods_UZM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE59E8345A172D78642BF601 /* Pods_UZM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21BC767503C257F3BD1AD001 /* Pods-UZM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UZM.debug.xcconfig"; path = "Target Support Files/Pods-UZM/Pods-UZM.debug.xcconfig"; sourceTree = "<group>"; };
 		4D301E7D2D60765A002ED69A /* UZM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UZM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D301E802D60765A002ED69A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D301E822D60765A002ED69A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		4D301E8C2D60765C002ED69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D301E8E2D60765C002ED69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D301E962D607898002ED69A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4D301E992D607AFB002ED69A /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		4D301E9A2D607AFB002ED69A /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		4D301E9E2D607EF1002ED69A /* Ext+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Color.swift"; sourceTree = "<group>"; };
+		7266CA450C09BAFB850912A3 /* Pods-UZM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UZM.release.xcconfig"; path = "Target Support Files/Pods-UZM/Pods-UZM.release.xcconfig"; sourceTree = "<group>"; };
+		CE59E8345A172D78642BF601 /* Pods_UZM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UZM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784AF83C10A018566C00D700 /* Pods_UZM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				4D301E7F2D60765A002ED69A /* UZM */,
 				4D301E7E2D60765A002ED69A /* Products */,
+				AC7A016E3CB256367C39825A /* Pods */,
+				D25D8264690402E690567EE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +69,7 @@
 		4D301E7F2D60765A002ED69A /* UZM */ = {
 			isa = PBXGroup;
 			children = (
+				4D301E9D2D607ED7002ED69A /* Helper */,
 				4D301E952D607888002ED69A /* Root */,
 				4D301E942D6077F8002ED69A /* Home */,
 				4D301E892D60765C002ED69A /* Assets.xcassets */,
@@ -69,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				4D301E842D60765A002ED69A /* HomeVC.swift */,
+				4D301E982D607AE8002ED69A /* Cell */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -83,6 +98,40 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
+		4D301E982D607AE8002ED69A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D301E992D607AFB002ED69A /* HomeTableViewCell.swift */,
+				4D301E9A2D607AFB002ED69A /* HomeTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4D301E9D2D607ED7002ED69A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4D301E9E2D607EF1002ED69A /* Ext+Color.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		AC7A016E3CB256367C39825A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21BC767503C257F3BD1AD001 /* Pods-UZM.debug.xcconfig */,
+				7266CA450C09BAFB850912A3 /* Pods-UZM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D25D8264690402E690567EE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE59E8345A172D78642BF601 /* Pods_UZM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -90,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D301E912D60765C002ED69A /* Build configuration list for PBXNativeTarget "UZM" */;
 			buildPhases = (
+				9B8DA39B530BFD95B8A58CB6 /* [CP] Check Pods Manifest.lock */,
 				4D301E792D60765A002ED69A /* Sources */,
 				4D301E7A2D60765A002ED69A /* Frameworks */,
 				4D301E7B2D60765A002ED69A /* Resources */,
+				86E12F88C89A972F7721FC5A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,11 +193,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D301E8D2D60765C002ED69A /* LaunchScreen.storyboard in Resources */,
+				4D301E9C2D607AFB002ED69A /* HomeTableViewCell.xib in Resources */,
 				4D301E8A2D60765C002ED69A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86E12F88C89A972F7721FC5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UZM/Pods-UZM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UZM/Pods-UZM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UZM/Pods-UZM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B8DA39B530BFD95B8A58CB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UZM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D301E792D60765A002ED69A /* Sources */ = {
@@ -154,7 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D301E852D60765A002ED69A /* HomeVC.swift in Sources */,
+				4D301E9B2D607AFB002ED69A /* HomeTableViewCell.swift in Sources */,
 				4D301E972D607898002ED69A /* BaseViewController.swift in Sources */,
+				4D301E9F2D607EF1002ED69A /* Ext+Color.swift in Sources */,
 				4D301E812D60765A002ED69A /* AppDelegate.swift in Sources */,
 				4D301E832D60765A002ED69A /* SceneDelegate.swift in Sources */,
 			);
@@ -290,6 +386,7 @@
 		};
 		4D301E922D60765C002ED69A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21BC767503C257F3BD1AD001 /* Pods-UZM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,6 +414,7 @@
 		};
 		4D301E932D60765C002ED69A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7266CA450C09BAFB850912A3 /* Pods-UZM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
