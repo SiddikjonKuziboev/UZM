@@ -6,6 +6,9 @@ target 'UZM' do
   use_frameworks!
 
     pod 'SnapKit', '~> 5.7.0'
-
+ pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'SDWebImage'
+  pod 'lottie-ios'
 
 end
